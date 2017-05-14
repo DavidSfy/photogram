@@ -1,1 +1,6 @@
-Ceci est la page index !
+<h1>Photogram</h1>
+
+<% @post.each do |post| %>
+  <%= post.image %>
+  <%= post.caption %>
+  <% end %>

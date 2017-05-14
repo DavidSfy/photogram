@@ -1,6 +1,5 @@
-page new
 
-<%= simple_form_for @post do |f| %>
+<%= simple_form_for @post, {:url => posts_new_path, :method => :get} do |f| %>
   <%= f.input :image %>
   <%= f.input :caption %>
   <%= f.button :submit %>
